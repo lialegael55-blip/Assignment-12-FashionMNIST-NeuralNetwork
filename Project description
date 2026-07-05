@@ -1,0 +1,110 @@
+# Fashion-MNIST Image Classification Using Neural Networks
+
+## Author
+Gael Liale-Fezeu
+
+Course: Learning Plan 12 – Neural Networks and Deep Learning Basics
+
+## Data Preprocessing
+
+The following preprocessing steps were applied:
+
+### Image Normalization
+- Pixel values scaled from 0–255 to 0–1
+
+### Image Flattening
+- Converted 28×28 images into 784-feature vectors
+
+### Data Visualization
+- Sample images displayed to understand dataset categories
+
+## Neural Network Architecture
+
+### Input Layer
+- 784 Features
+
+### Hidden Layer 1
+- 128 Neurons
+- ReLU Activation
+
+### Hidden Layer 2
+- 64 Neurons
+- ReLU Activation
+
+### Output Layer
+- 10 Neurons
+- Softmax Activation
+
+### Optimizer
+- Adam
+
+### Loss Function
+- Sparse Categorical Crossentropy
+
+### Metric
+- Accuracy
+
+## Training Configuration
+
+- Epochs: 15
+- Batch Size: 64
+- Validation Split: 20%
+
+## Results
+
+### Model Performance
+- Test Accuracy ≈ 88%
+
+### Best Performing Classes
+- Trouser
+- Sandal
+- Bag
+- Ankle Boot
+
+### More Challenging Classes
+- Shirt
+- Pullover
+- Coat
+
+The confusion matrix showed that visually similar clothing types were more likely to be misclassified.
+
+## Model Improvements
+
+Experiments included:
+
+### Larger Hidden Layers
+- 128 → 256 neurons
+- 64 → 128 neurons
+
+### Data Augmentation
+- Rotation
+- Zoom
+- Width Shifting
+- Height Shifting
+
+These modifications increased model learning capacity and robustness.
+
+## Practical Application
+
+A fashion retailer could use this model to:
+
+- Automatically categorize clothing products
+- Improve inventory management
+- Support visual search features
+- Reduce manual classification effort
+
+### Challenges
+- Scalability
+- Real-time processing requirements
+- Integration with inventory systems
+- Periodic model retraining
+
+## Future Work
+
+Possible improvements include:
+
+- Convolutional Neural Networks (CNNs)
+- Hyperparameter tuning
+- Additional data augmentation
+- Transfer learning techniques
+- Larger image datasets
